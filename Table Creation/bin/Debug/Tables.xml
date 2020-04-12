@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Tables>
+  <Table name="student">
+    <Columns>
+      <column>
+        <Name>s_id</Name>
+        <data_type>Int64</data_type>
+        <Primary_key>true</Primary_key>
+        <Constarints>None </Constarints>
+        <Foreign_keys />
+        <rows />
+      </column>
+      <column>
+        <Name>grades_id</Name>
+        <data_type>Int64</data_type>
+        <Primary_key>false</Primary_key>
+        <Constraints>None </Constraints>
+        <Foreign_keys>
+          <F_K>
+            <Tablem_name>grades</Tablem_name>
+            <Column_name>g_id</Column_name>
+          </F_K>
+        </Foreign_keys>
+        <rows />
+      </column>
+    </Columns>
+  </Table>
+  <Table name="grades">
+    <Columns>
+      <column>
+        <Name>g_id</Name>
+        <data_type>Int64</data_type>
+        <Primary_key>true</Primary_key>
+        <Constraints>None </Constraints>
+        <Foreign_keys />
+        <rows />
+      </column>
+    </Columns>
+  </Table>
+  <Table name="farah">
+    <Columns>
+      <column>
+        <Name>lama</Name>
+        <data_type>Int64</data_type>
+        <Primary_key>true</Primary_key>
+        <Constraints>None </Constraints>
+        <Foreign_keys />
+        <rows />
+      </column>
+    </Columns>
+  </Table>
+  <Table name="fares">
+    <Columns>
+      <column>
+        <Name>ayman</Name>
+        <data_type>Char</data_type>
+        <Primary_key>true</Primary_key>
+        <Constraints>Not NULL </Constraints>
+        <Foreign_keys />
+        <rows>
+          <row name="0">c</row>
+          <row name="1">d</row>
+          <row name="2">gf</row>
+          <row name="3">h</row>
+          <row name="4">y</row>
+          <row name="5">g</row>
+        </rows>
+      </column>
+    </Columns>
+  </Table>
+</Tables>
